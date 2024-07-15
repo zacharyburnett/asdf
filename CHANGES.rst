@@ -1,3 +1,7 @@
+4.0.0 (unreleased)
+
+- remove ``copy_arrays`` [#1800]
+
 3.4.0 (unreleased)
 ------------------
 
