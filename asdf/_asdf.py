@@ -75,7 +75,7 @@ class AsdfFile:
         ignore_version_mismatch=True,
         ignore_unrecognized_tag=False,
         ignore_implicit_conversion=NotSet,
-        memmap=True,
+        memmap=False,
         lazy_load=True,
         custom_schema=None,
     ):
@@ -118,8 +118,7 @@ class AsdfFile:
         memmap : bool, optional
             When `True`, when reading files, attempt to memmap underlying data
             arrays when possible. When set, this argument will override
-            ``copy_arrays``. The default will change to ``False`` in an upcoming
-            ASDF version.
+            ``copy_arrays``.
 
         lazy_load : bool, optional
             When `True` and the underlying file handle is seekable, data
